@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.banner-card{
+  width: 100%;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  height: 70vh;
+  color: white;
+  position: relative;
+}
+.banner-img{
+  height: 70vh;
+  width: 100%;
+}
+.bannerTitle{
+position: absolute;
+top: 45vh;
+left: 5vw;
+
+}
+.banner-text{
+  position: absolute;
+  top: 55vh;
+  left: 5vw;
+  height: 4.5rem;
+  overflow: hidden;
+  margin-right: 5vw;
+}
+
+.movie-img{
+  height:40vh;
+  width: 20vw;
+}
+
+.movies-list{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.movie-card{
+width: 20vw;
+margin: 1rem;
+color: white;
+position: relative;
+}
+.movie-title{
+position: absolute;
+top: 1rem;
+left: 1rem;
+
+}
+.movie-button{
+position: absolute;
+bottom: 2rem;
+
+}
+.favourites-genres{
+  padding: 3rem;
+}
+.favourites-table{
+  padding: 3rem;
+  overflow: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .movies-list {
+    grid-template-columns: auto auto auto;    
+  }  
+  .movie-img {
+    height:40vh;
+    width: auto;
+  }
+  .movie-card {
+    height:40vh;
+    width: auto;
+    margin: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .movies-list {
+    grid-template-columns: auto auto;
+  }  
+  .movie-img {
+    height:40vh;
+    width: auto;
+  }
+  .movie-card {
+    height:40vh;
+    width: auto;
+    margin: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .movie-img {
+    height:40vh;
+    width: auto;
+  }
+  .movie-card {
+    height:40vh;
+    width: auto;
+    margin: 0.1rem;
+  }
+  .movies-list{
+    grid-template-columns: auto;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width:400px){
+  .banner-card{
+     height: 30vh;
+    
+  }
+  .banner-img{
+    height:30vh;
+  }
+  .bannerTitle{
+    position: absolute;
+    top: 12vh;
+    left: 5vw;
+  }
+  .banner-text{
+    position: absolute;
+    top: 17vh;
+    left: 5vw;
+    
+  }
+}
+
